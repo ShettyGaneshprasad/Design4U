@@ -1,0 +1,17 @@
+html,
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*-------------------navbar----------------*/
+
+.nav {
+  background: white;
+  padding: 0 2rem;
+  height: 0rem;
+  min-height: 10vh;
+}
+
+/*---------X---------navbar-------X--------*/
