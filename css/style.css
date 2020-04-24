@@ -1,10 +1,28 @@
+@import url("../css/fonts.css");
+
 html,
 body {
   margin: 0%;
   box-sizing: border-box;
   overflow-x: hidden;
 }
+:root {
+  /*theme Color*/
+  --text-gray: #3f4954;
+  --text-light: #686666da;
+  --bg-color: #0f0f0f;
+  --midnight: #104f55;
 
+  /*gradient color*/
+  -sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+  /*theme font family*/
+  --Abel: "Abel", cursive;
+  --Anton: "Anton", cursive;
+  --Josefin: "Josefin", cursive;
+  --Lexend: "Lexend", cursive;
+  --Livvic: "Livvic", cursive;
+}
 /*---------------Global Clases-------------*/
 a {
   text-decoration: none;
@@ -27,7 +45,7 @@ ul {
   background: white;
   padding: 0 2rem;
   height: 0rem;
-  min-height: 40vh;
+  min-height: 10vh;
   overflow: hidden;
 }
 
@@ -44,14 +62,45 @@ ul {
   padding: 1.6rem;
   font-size: 1.1rem;
   position: relative;
+  font-family: var(--Abel);
+  font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link:hover a {
+  color: white;
+}
+
+.nav .nav-items .nav-link:hover {
+  background-color: midnightblue;
 }
 .nav .nav-brand a {
   font-size: 1.6rem;
   padding: 1rem 0;
   display: block;
+  font-family: var(--Lexend);
+  font-size: 1.6rem;
 }
 
 .nav .social {
   padding: 1.4rem 0;
 }
+
+.nav .social i {
+  padding: 0.2rem;
+}
+.nav .social i:hover {
+  color: white;
+  background-color: black;
+}
 /*---------X---------navbar-------X--------*/
+
+/*Viewport less than or equal to 750px*/
+
+@media only screen and (max-width: 750px) {
+  .nav .nav-menu,
+  .nav .nav-items {
+    flex-direction: column;
+  }
+}
+
+/*Viewport less than or equal to 750px*/
