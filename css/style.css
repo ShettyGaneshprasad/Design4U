@@ -37,20 +37,82 @@ a {
 ul {
   list-style-type: none;
 }
+
+h1 {
+  font-family: var(--Lexend);
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: var(--Lexend);
+}
+
+h3 {
+  font-family: var(--Abel);
+  font-size: 2rem;
+}
+
+button.btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button.head {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+span {
+  font-family: var(--Abel);
+}
+
+.container {
+  margin: 0.5vw;
+}
 /*-------X-------Global Clases-------X -----*/
 
 /*-------------------navbar----------------*/
 
 .nav {
-  background: white;
+  background: black;
   padding: 0 2rem;
   height: 0rem;
   min-height: 10vh;
   overflow: hidden;
+  transition: height 1s ease-in-out;
 }
 
 .nav .nav-menu {
   justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+  position: absolute;
+  top: 0%;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.collapse {
+  height: 30rem;
 }
 
 .nav .nav-items {
@@ -65,13 +127,15 @@ ul {
   font-family: var(--Abel);
   font-size: 1.1rem;
 }
-
-.nav .nav-items .nav-link:hover a {
+a {
   color: white;
+}
+.nav .nav-items .nav-link:hover a {
+  color: black;
 }
 
 .nav .nav-items .nav-link:hover {
-  background-color: midnightblue;
+  background-color: white;
 }
 .nav .nav-brand a {
   font-size: 1.6rem;
@@ -89,17 +153,103 @@ ul {
   padding: 0.2rem;
 }
 .nav .social i:hover {
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
 }
 /*---------X---------navbar-------X--------*/
 
+/*------------------------Main Content-----------------------*/
+
+/*--------------------Site title------------    -*/
+
+main .site-title {
+  background: url("../assets/background.jpg");
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+}
+
+main .site-title .site-background {
+  padding-top: 10rem;
+  text-align: center;
+  color: black;
+}
+
+main .site-title h1,
+h3 {
+  margin: 0.3rem;
+}
+main .site-title .btn {
+  margin: 1.8rem;
+  background-color: skyblue;
+}
+main .site-title .head {
+  display: block;
+  position: centre;
+  margin: 1.8rem;
+  background-color: white;
+}
+main .site-title .btn:hover {
+  background-color: black;
+  border: 1px solid var(--white);
+  color: white;
+}
+main .site-title .head:hover {
+  background-color: black;
+  border: 1px solid var(--white);
+  color: white;
+}
+
+/*-------------X------Site title--------X   --- -*/
+/*------------------------Project carousel-----------------------*/
+
+main .blog {
+  background: url("../assets/abstract-architecture-black-and-white.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+}
+main .blog .blog-post {
+  padding-top: 6rem;
+}
+
+main .blog-post .blog-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 3rem 2rem;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .blog-content .blog-title {
+  padding: 2rem 0;
+}
+
+main .blog-content .btn-blog {
+  padding: 0.7rem 2rem;
+  background: var(--sky);
+  margin: 0.5rem;
+}
+
+main .blog-content span {
+  display: block;
+}
+
+/*-----------X------------Project carousel------------X----------*/
+/*-----------X------------Main Content------------X----------*/
 /*Viewport less than or equal to 750px*/
 
 @media only screen and (max-width: 750px) {
   .nav .nav-menu,
   .nav .nav-items {
     flex-direction: column;
+  }
+  .nav .toggle-collapse {
+    display: initial;
   }
 }
 
