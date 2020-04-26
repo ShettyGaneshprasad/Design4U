@@ -224,6 +224,9 @@ main .blog-post .blog-content {
   margin: 3rem 2rem;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
 }
+main .blog-post .blog-content:hover {
+  width: 90%;
+}
 
 main .blog-content .blog-title {
   padding: 2rem 0;
@@ -231,16 +234,66 @@ main .blog-content .blog-title {
 
 main .blog-content .btn-blog {
   padding: 0.7rem 2rem;
-  background: var(--sky);
+  background: white;
   margin: 0.5rem;
+}
+
+main .blog-content .btn-blog:hover {
+  background-color: black;
+  color: white;
 }
 
 main .blog-content span {
   display: block;
 }
 
+section .container .owl-nav {
+  position: absolute;
+  top: 0%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+  color: black;
+  background: transparent;
+  font-size: 2rem;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: black;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+  outline: none;
+}
+
 /*-----------X------------Project carousel------------X----------*/
 /*-----------X------------Main Content------------X----------*/
+
+/*------------------------Footer-----------------------*/
+
+footer.footer {
+  color: white;
+  height: 100%;
+  background: black;
+  position: relative;
+}
+
+footer.footer .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+footer.footer .container > div {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 3rem 0.9rem;
+}
+
+/*-----------X------------Footer------------X----------*/
+
 /*Viewport less than or equal to 750px*/
 
 @media only screen and (max-width: 750px) {
