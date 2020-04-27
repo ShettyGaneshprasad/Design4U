@@ -8,8 +8,13 @@
     <!--link Owl Carosal-->
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <!--Animation onscrool-->
+    <link rel="stylesheet" href="css/aos.css" />
+
     <!--Custom Style-->
     <link rel="stylesheet" href="./css/style.css" />
+
     <!-----fonts Awesome-->
     <link rel="stylesheet" href="./css/all.css" />
   </head>
@@ -28,26 +33,26 @@
         <div>
           <ul class="nav-items">
             <li class="nav-link">
-              <a href="#">Home</a>
+              <a href="index.html">Home</a>
             </li>
+
             <li class="nav-link">
-              <a href="#">Category</a>
+              <a href="./archive.html">Archive</a>
             </li>
+
             <li class="nav-link">
-              <a href="#">Archive</a>
-            </li>
-            <li class="nav-link">
-              <a href="#">Pages</a>
-            </li>
-            <li class="nav-link">
-              <a href="#">Contact Us</a>
+              <a href="#dev">Contact Web Dev</a>
             </li>
           </ul>
         </div>
         <div class="social text-gray">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100008077770716" target="blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/design_4_u__/?igshid=mwr4tt7p0lj6" target="blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://wa.me/8355808660" target="blank"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
     </nav>
@@ -59,37 +64,55 @@
     <main>
       <!-----------Site title------------>
       <section class="site-title">
-        <div class="site-background">
+        <div class="site-background" data-aos="fade-up" data-aos-delay="100">
           <button class="head">
             <h1>Design 4 U</h1>
             <br />
-            <h3>By Vishal Yadav</h3>
+            <h3>By Ganesh Shetty</h3>
           </button>
 
-          <button class="btn">Check my Projects</button>
+          <button
+            class="btn"
+            onclick="document.getElementById('Myprojects').scrollIntoView();"
+          >
+            Check my Projects
+          </button>
         </div>
       </section>
       <!----X------Site title------X----->
 
       <!-----------Project Carousel----------->
       <section>
-        <div class="blog">
+        <div class="blog" id="Myprojects">
           <div class="container">
             <div class="owl-carousel owl-theme blog-post">
               <!--content inside carousel is each div tag-->
-              <div class="blog-content">
+              <div
+                class="blog-content"
+                data-aos="fade-up-right"
+                data-aos-delay="100"
+              >
                 <img src="./assets/Project1/resort.jpg" alt="post-1" />
                 <div class="blog-title">
                   <h2>cultural resort</h2>
                   <br />
-                  <button class="btn btn-blog">Check My Project</button>
+                  <button class="btn btn-blog"  onclick="location.href='./CulturalResort/culturalresort.html' ">Check this project</button>
                 </div>
               </div>
-              <div class="blog-content">
+              <div
+                class="blog-content"
+                data-aos="fade-up-left"
+                data-aos-delay="100"
+              >
                 <img src="./assets/Project2/bank.jpg" alt="post-1" />
                 <div class="blog-title">
                   <h2>Bank Working Drawing</h2>
-                  <button class="btn btn-blog">Check My Project</button>
+                  <button
+                    class="btn btn-blog"
+                    onclick="location.href='./bankingwd/bankwd.html' "
+                  >
+                    Check This Project
+                  </button>
                 </div>
               </div>
             </div>
@@ -110,18 +133,63 @@
 
     <!------------------------------Footer------------------------------------------>
 
-    <footer class="footer">
+    <footer class="footer" id="dev">
       <div class="container">
-        <div class="about-us">
+        <div class="about-us" data-aos="fade-up-right" data-aos-delay="100">
           <h2>About Dev</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam nisi
-            nostrum eos sit provident nemo quisquam itaque, in iste temporibus.
+            Shetty Ganeshprasad is currently pursuing Computer Science
+            Engginering in SDMCET, Dharwad(Karnataka). He was Born & brought up
+            in Mumbai.<br />
+            Currently in prefinal year of his engineering.<br />
+            He is always excited to work on new projects and complete it
+            succesfully.<br />
+            He can Build a beautiful interactive responsive website, Android app
+            & iOS app.
           </p>
         </div>
-        <div class="follow">
+        <div class="follow" data-aos="fade-up-left" data-aos-delay="100">
           <h2>Follow Dev</h2>
+          <p>Connect to the Developer of this website</p>
+          <div>
+            <a href="https://www.instagram.com/_g4nesh.shetty_/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+
+            <a
+              href="https://www.facebook.com/ganeshshetty.santhosh"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+
+            <a href="https://wa.me/7900129925"><i class="fab fa-whatsapp" target="blank"></i></a>
+
+            <a
+              href="https://www.linkedin.com/in/shetty-ganeshprasad-955599184/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+
+            <a href="https://github.com/ganeshShetty98" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+
+            <a href="https://twitter.com/_G4neshshetty_" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
         </div>
+      </div>
+      <div class="rights flex-row">
+        <h4 class="text-gray">
+          Made with ❤️ by Shetty Ganeshprasad.👨‍💻
+          <a href="#"></a>
+        </h4>
+      </div>
+      <div class="move-up">
+        <span>
+          <i class="fas fa-arrow-circle-up fa-2x"></i>
+        </span>
       </div>
     </footer>
 
@@ -133,6 +201,8 @@
     <!--ljsOwl Carosal-->
     <script src="./js/owl.carousel.min.js"></script>
 
+    <!--aos scrool js file-->
+    <script src="./js/aos.js"></script>
     <!--Custom Javascript file-->
     <script src="./js/main.js"></script>
   </body>
