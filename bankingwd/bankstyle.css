@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--Lexend);
+}
+.gallery {
+  margin: 10px 50px;
+}
+.gallery img {
+  width: 230px;
+  padding: 5px;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
