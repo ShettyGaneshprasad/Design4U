@@ -46,7 +46,7 @@ Send us your valuable suggestion and feedback at:- shettyganeshprasad1998@gmail.
 
 * <image src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747__340.png" width="50">    Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML. 
 
-* <image src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400__340.png" width="150">    JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm.
+* <image src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400__340.png" width="75">    JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm.
 ## Project Team Members
 
 * [**Shetty Ganeshprasad**](https://github.com/ganeshShetty98/)
