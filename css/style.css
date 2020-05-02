@@ -354,7 +354,7 @@ footer.footer .move-up span:hover {
 
 @media only screen and (max-width: 1130px) {
   footer.footer .container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
