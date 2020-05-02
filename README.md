@@ -41,11 +41,10 @@ Which gives all information about the college to its Student, Faculty and even v
 Send us your valuable suggestion and feedback at:- shettyganeshprasad1998@gmail.com 
 
 
-## Built With
-* <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png" width="150">   is a mobile SDK that allows us to create cross-platform mobile applications (ie. Android and iOS)
+## Built With 
+* <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png" width="150"> Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. 
 
-* <image src="https://www.gstatic.com/devrel-devsite/prod/v2210deb8920cd4a55bd580441aa58e7853afc04b39a9d9ac4198e1cd7fbe04ef/firebase/images/lockup.png" width="150">    is used for Authentication, Cloud Storage, Database and sending Push Notification to App User.
-
+* <image src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747__340.png" width="150">    Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML. 
 
 ## Project Team Members
 
