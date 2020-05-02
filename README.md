@@ -38,12 +38,10 @@ Send us your valuable suggestion and feedback at:- shettyganeshprasad1998@gmail.
 
 
 ## Project Team Members
-
-* [**Shetty Ganeshprasad**](https://github.com/ganeshShetty98/):-sdfbdsgbsdgb
+.
+* [**Shetty Ganeshprasad**](https://github.com/ganeshShetty98/):-Web Site Developer.
    
-sfbdsg
-* [**Vishal Yadav**](https://github.com/nikhita-png)
-sdfbsdb
+* [**Vishal Yadav**](https://github.com/nikhita-png):- Architect Designer.
 
 
 
