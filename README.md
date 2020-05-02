@@ -41,7 +41,7 @@ Send us your valuable suggestion and feedback at:- shettyganeshprasad1998@gmail.
 .
 * [**Shetty Ganeshprasad**](https://github.com/ganeshShetty98/):-Web Site Developer.
    
-* [**Vishal Yadav**](https://github.com/nikhita-png):- Architect Designer.
+* [**Vishal Yadav**](https://www.instagram.com/design_4_u__/?igshid=mwr4tt7p0lj6):- Architect Designer.
 
 
 
