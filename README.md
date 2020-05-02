@@ -9,16 +9,12 @@ This website has all Projects details and contact information required for their
 
 ## Website's Screenshot
 <p>
-  <img src="https://firebasestorage.googleapis.com/v0/b/sdmcet-assist.appspot.com/o/GitHub%20Readme%20App%20Screenshot%2FAnnotation%202020-05-02%20161326.jpg?alt=media&token=d5c26299-bfc1-429e-b2d8-c3fbe8a31a4e" width="300">
-   <img src="https://firebasestorage.googleapis.com/v0/b/sdmcet-assist.appspot.com/o/GitHub%20Readme%20App%20Screenshot%2FAnnotat.jpg?alt=media&token=6889d9fc-6792-4256-9089-41e2c89deb97" width="300">
+  <img src="https://firebasestorage.googleapis.com/v0/b/sdmcet-assist.appspot.com/o/GitHub%20Readme%20App%20Screenshot%2FAnnotation%202020-05-02%20165629.jpg?alt=media&token=32d97d0a-91fd-43a3-a536-0118be11dbf7" width="300">
+   <img src="https://firebasestorage.googleapis.com/v0/b/sdmcet-assist.appspot.com/o/GitHub%20Readme%20App%20Screenshot%2FAnnotat.jpg?alt=media&token=df4927cb-ae10-4419-bd29-55ed676021b2" width="300">
   
-   <img src="https://firebasestorage.googleapis.com/v0/b/sdmcet-assist.appspot.com/o/GitHub%20Readme%20App%20Screenshot%2FAnnotat.jpg?alt=media&token=6889d9fc-6792-4256-9089-41e2c89deb97" width="300">
+   <img src="https://firebasestorage.googleapis.com/v0/b/sdmcet-assist.appspot.com/o/GitHub%20Readme%20App%20Screenshot%2FAnnota.jpg?alt=media&token=5b591250-a8b3-4bfd-8640-c65d7e97f6ab" width="300">
    
-   <img src="https://firebasestorage.googleapis.com/v0/b/sdmcet-assist.appspot.com/o/GitHub%20Readme%20App%20Screenshot%2FAnnota.jpg?alt=media&token=bc691dc5-7fa7-4d80-9883-a1a2d5a3d7a2" width="300">
-  
-  
-
-
+   
 </p>
 
 
