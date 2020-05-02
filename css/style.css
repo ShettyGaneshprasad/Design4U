@@ -3,10 +3,13 @@
 html,
 body {
   margin: 0%;
+  width: auto !important;
   box-sizing: border-box;
-  overflow-x: hidden;
+
   overflow: visible;
+  overflow-x: hidden !important;
 }
+
 :root {
   /*theme Color*/
   --text-gray: #3f4954;
@@ -24,6 +27,7 @@ body {
   --Lexend: "Lexend", cursive;
   --Livvic: "Livvic", cursive;
 }
+
 /*---------------Global Clases-------------*/
 a {
   text-decoration: none;
@@ -76,6 +80,7 @@ span {
 .container {
   margin: 0.5vw;
 }
+
 /*-------X-------Global Clases-------X -----*/
 
 /*-------------------navbar----------------*/
@@ -128,9 +133,11 @@ span {
   font-family: var(--Abel);
   font-size: 1.1rem;
 }
+
 a {
   color: white;
 }
+
 .nav .nav-items .nav-link:hover a {
   color: black;
 }
@@ -138,6 +145,7 @@ a {
 .nav .nav-items .nav-link:hover {
   background-color: white;
 }
+
 .nav .nav-brand a {
   font-size: 1.6rem;
   padding: 1rem 0;
@@ -153,10 +161,12 @@ a {
 .nav .social i {
   padding: 0.2rem;
 }
+
 .nav .social i:hover {
   color: black;
   background-color: white;
 }
+
 /*---------X---------navbar-------X--------*/
 
 /*------------------------Main Content-----------------------*/
@@ -181,21 +191,25 @@ main .site-title h1,
 h3 {
   margin: 0.3rem;
 }
+
 main .site-title .btn {
   margin: 1.8rem;
   background-color: skyblue;
 }
+
 main .site-title .head {
   display: block;
   position: centre;
   margin: 1.8rem;
   background-color: white;
 }
+
 main .site-title .btn:hover {
   background-color: black;
   border: 1px solid var(--white);
   color: white;
 }
+
 main .site-title .head:hover {
   background-color: black;
   border: 1px solid var(--white);
@@ -203,6 +217,7 @@ main .site-title .head:hover {
 }
 
 /*-------------X------Site title--------X   --- -*/
+
 /*------------------------Project carousel-----------------------*/
 
 main .blog {
@@ -213,6 +228,7 @@ main .blog {
   height: 100vh;
   width: 100%;
 }
+
 main .blog .blog-post {
   padding-top: 6rem;
 }
@@ -270,6 +286,7 @@ section .container .owl-nav {
 }
 
 /*-----------X------------Project carousel------------X----------*/
+
 /*-----------X------------Main Content------------X----------*/
 
 /*------------------------Footer-----------------------*/
@@ -306,13 +323,16 @@ footer.footer .move-up {
   right: 6%;
   top: 50%;
 }
+
 footer.footer .move-up span {
   color: var(--midnight);
 }
+
 footer.footer .move-up span:hover {
   color: var(--white);
   cursor: pointer;
 }
+
 /*-----------X------------Footer------------X----------*/
 
 /*Viewport less than or equal to 750px*/
