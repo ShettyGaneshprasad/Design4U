@@ -1,0 +1,55 @@
+
+function piResponse() {
+		piSetCookie('visitor_id825903', '24075844', 3650);
+			piSetCookie('visitor_id825903-hash', '0440f831266da9df5a325273009b94d1b8833737ce66a21fe349fcce46a7410b03400327caa7f65bc0e622d65909a956dcf4bb27', 3650);
+		
+		if (document.location.protocol != "https:" || (document.location.protocol == "https:" && true)) {
+		var analytics_link = document.location.protocol + "//" + "go.ameyo.com/analytics?";
+		pi.tracker.visitor_id='24075844';
+
+				pi.tracker.visitor_id_sign='0440f831266da9df5a325273009b94d1b8833737ce66a21fe349fcce46a7410b03400327caa7f65bc0e622d65909a956dcf4bb27';
+		
+				pi.tracker.campaign_id='1625';
+		
+		var variables = 'conly=true';
+		for (property in pi.tracker) {
+					variables += "&" + property + "=" + pi.tracker[property];
+				}
+		var headID = document.getElementsByTagName("head")[0];
+		piScriptObj[piScriptNum] = document.createElement('script');
+		piScriptObj[piScriptNum].type = 'text/javascript';
+		piScriptObj[piScriptNum].src = analytics_link + variables;
+		headID.appendChild(piScriptObj[piScriptNum]);
+		piScriptObj[piScriptNum].onload = function() { return; }
+	}
+	
+		// Get script name
+	const pdjsScriptName = typeof window.getPardotUrl === 'function' ? 'pd.js' : 'pi.js';
+
+		// Cache buster
+	if (typeof piVersion === 'undefined' || piVersion !== '1.0.0') {
+		// Get script domain
+		const pdjsDomain = (document.location.protocol === 'https:') ? 'https://pi.pardot.com' : 'http://cdn.pardot.com';
+
+		// Create iframe
+		const pdjsIframe = document.createElement('iframe');
+		pdjsIframe.name = pdjsIframe.id = 'ifr_' + Date.now();
+		pdjsIframe.width = pdjsIframe.height = 0;
+		document.body.appendChild(pdjsIframe);
+
+		// Create form
+		const pdjsForm = document.createElement('form');
+		pdjsForm.method = "POST";
+		pdjsForm.target = pdjsIframe.name;
+		pdjsForm.action = pdjsDomain + '/' + pdjsScriptName;
+		document.body.appendChild(pdjsForm);
+
+		// Request script
+		pdjsForm.submit();
+	}
+	}
+piResponse();
+
+
+
+

@@ -1,0 +1,161 @@
+/* Initialisers
+-------------------------------*/
+forms = $('form');
+isIE7 = $('html').hasClass('is-ie7');
+formPlaceholders = Modernizr.input.placeholder;
+boxShadows = Modernizr.boxshadow;
+isIE8 = $('html').hasClass('is-ie8');
+	
+	//////////////////////
+	// initalises forms, standardises cross-device behaviours
+	//////////////////////
+	function initForms(){
+		forms.each(function(){
+			var $this = $(this),
+				allInputs = $this.find('input'),
+				allSelects = $this.find('select'),
+				placeholderInputs = $this.find('[placeholder]'),
+				checkboxInputs = $this.find('input[type="checkbox"]'),
+				radioInputs = $this.find('input[type="radio"]'),
+				coupledCheckboxes = $this.find('.coupled-checks');
+			
+			// apply custom iCheck styles to checkboxes
+			checkboxInputs.iCheck({
+				'checkboxClass': 	'styled-checkbox',
+				'checkedClass': 	'styled-checkbox-checked',
+				'insert':			'<div class="check"></div>'
+			});
+
+			// apply custom iCheck styles to radios
+			radioInputs.iCheck({
+				'radioClass':		'styled-radio',
+				'checkedClass': 	'styled-radio-checked',
+				'insert':			'<div class="check"></div>'
+			});
+			
+			// ensure all forms are reset
+			this.reset();
+
+			 // loop over each input
+			 allInputs.each(function(){
+				var $this = $(this),
+					type = $this.attr('type');
+			 });
+
+			 // loop over each select to build custom select styles
+			 allSelects.each(function(){
+				
+				// not for IE7
+				if(!isIE7){
+					var $this = $(this),
+						wrap = $('<div />', {
+							'class':	'styled-select'
+						});
+						
+					// wrap
+					$this.wrap(wrap);
+	
+					// invoke bootstrap-select plugin
+					$this.selectpicker({
+						'showIcon':	false,
+						'dropupAuto':	false
+					});
+					
+					if (window.PIE) {$('.form-group .styled-select .btn-group .btn').each(function() {PIE.attach(this);});} 	
+				}
+			 });
+
+			// if no native support for placeholders
+			if(!formPlaceholders){
+				// loop through each
+				placeholderInputs.each(function(){
+					var $this = $(this),
+						placeholderClass = 'placeholder',
+						thisText = $this.val(),
+						placeholderText = $this.attr('placeholder');
+	
+					// initialisation
+					if(thisText !== placeholderText){
+						//add placeholder classname and set value to placeholder text
+						$this.addClass(placeholderClass).val(placeholderText);
+					}
+					
+					//focus
+					$this.focus(function(){
+						if($this.val() == $this.attr('placeholder')){
+							$this.removeClass(placeholderClass).val('');	
+						}
+					});
+					
+					//blur
+					$this.blur(function(){
+						if($this.val() === '' || $this.val() == $this.attr('placeholder')){
+							//add placeholder classname and set value to placeholder text
+							$this.addClass(placeholderClass).val(placeholderText);
+						}
+					}).blur();
+				});
+			}
+			
+			// coupled checkboxes
+			if(coupledCheckboxes.length){
+				coupledCheckboxes.each(function(){
+					var checkboxes = $(this).find('input[type=checkbox]');
+	
+					// loop over each checkbox
+					checkboxes.each(function(){
+						// identify other checkboxes in this set
+						var otherChecks = checkboxes.not($(this));
+						
+						// tie into iCheck 'change' event
+						$(this).on('ifChanged', function(){
+							// if this is now selected
+							if($(this).attr('checked') == 'checked'){
+								otherChecks.iCheck('uncheck');
+							}
+						});
+					});
+				});
+				
+				
+				// if no native support for placeholders
+			if(!formPlaceholders){
+				// loop through each
+				placeholderInputs.each(function(){
+					var $this = $(this),
+						placeholderClass = 'placeholder',
+						thisText = $this.val(),
+						placeholderText = $this.attr('placeholder');
+	
+					// initialisation
+					if(thisText !== placeholderText){
+						//add placeholder classname and set value to placeholder text
+						$this.addClass(placeholderClass).val(placeholderText);
+					}
+					
+					//focus
+					$this.focus(function(){
+						if($this.val() == $this.attr('placeholder')){
+							$this.removeClass(placeholderClass).val('');	
+						}
+					});
+					
+					//blur
+					$this.blur(function(){
+						if($this.val() === '' || $this.val() == $this.attr('placeholder')){
+							//add placeholder classname and set value to placeholder text
+							$this.addClass(placeholderClass).val(placeholderText);
+						}
+					}).blur();
+				});}
+				
+				if (window.PIE) {
+				$('.styled-radio').each(function() {PIE.attach(this);});
+				$('.styled-radio .check').each(function() {PIE.attach(this);});
+				
+				}
+				
+			}
+			
+		});
+	}
