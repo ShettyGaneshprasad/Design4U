@@ -86,7 +86,7 @@ span {
 /*-------------------navbar----------------*/
 
 .nav {
-  background: #b22d30;
+  background: black;
   padding: 0 2rem;
   height: 0rem;
   min-height: 10vh;
@@ -139,11 +139,11 @@ a {
 }
 
 .nav .nav-items .nav-link:hover a {
-  color: white;
+  color: black;
 }
 
 .nav .nav-items .nav-link:hover {
-  background-color: #2b4278;
+  background-color: white;
 }
 
 .nav .nav-brand a {
@@ -194,25 +194,24 @@ h3 {
 
 main .site-title .btn {
   margin: 1.8rem;
-  background-color: #2b4278;
-  color: white;
+  background-color: skyblue;
 }
 
 main .site-title .head {
   display: block;
   position: centre;
   margin: 1.8rem;
-  background-color: #655595;
+  background-color: white;
 }
 
 main .site-title .btn:hover {
-  background-color: #b22d30;
+  background-color: black;
   border: 1px solid var(--white);
-  color: black;
+  color: white;
 }
 
 main .site-title .head:hover {
-  background-color: #b22d30;
+  background-color: black;
   border: 1px solid var(--white);
   color: white;
 }
@@ -387,20 +386,3 @@ footer.footer .move-up span:hover {
 }
 
 /*        x      Viewport less then or equal to 520px       x     */
-
-.owl-carousel owl-theme blog-post {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.block-listing {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #2196f3;
-  padding: 10px;
-  grid-column-gap: 50px;
-}
-
-.othercskaa {
-  color: red;
-}
